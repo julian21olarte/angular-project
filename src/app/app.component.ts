@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   ]
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Titulo de proyecto de angular 4';
 }

@@ -1,1 +1,11 @@
-<h1> {{title}} </h1>
+<div class="col-lg-8 col-lg-offset-2">
+  <div class="jumbotron">
+      <h2 class="text-danger"> {{title}} </h2>
+      <p>...</p>
+      <p>
+        <a class="btn btn-danger btn-lg" [routerLink]="['/home']" role="button">Inicio</a>
+        <a class="btn btn-success btn-lg" [routerLink]="['/about']" role="button">About</a>
+        <a class="btn btn-warning btn-lg" [routerLink]="['/contact']" role="button">Contacto</a>
+      </p>
+  </div>
+</div>

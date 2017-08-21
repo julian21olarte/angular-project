@@ -4,16 +4,21 @@ import { Routes, RouterModule } from '@angular/router';
 
 //components
 import { HomeComponent } from './components/home/home.component';
+import { AboutComponent } from './components/about/about.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'home', component: HomeComponent }
+  { path: 'home', component: HomeComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: '**', component: HomeComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class NameRoutingModule { }
+export class RoutingModule { }
 
-export const routedComponents = [HomeComponent];
+export const routedComponents = [HomeComponent, AboutComponent, ContactComponent];

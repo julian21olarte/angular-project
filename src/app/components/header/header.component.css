@@ -1,0 +1,23 @@
+.navbar.navbar-inverse {
+  background-color: darkred;
+  border-radius: 0 !important;
+  margin: 0;
+  border: none;
+  box-shadow: 0px 4px 5px lightgray;
+}
+.navbar.navbar-inverse li, 
+.navbar.navbar-inverse li a, 
+.navbar.navbar-inverse li span {
+  color: white;
+}
+.navbar.navbar-inverse li:hover a, 
+.navbar.navbar-inverse li:hover span {
+  color: #ddd;
+}
+.navbar.navbar-inverse li:hover {
+  background-color: rgba(255, 255, 255, .2);
+}
+
+.navbar-nav .active {
+  border-bottom: 4px solid peru;
+}
