@@ -1,3 +1,7 @@
+<div *ngIf="response" [ngClass]=" (response.status ? 'alert alert-success' : 'alert alert-danger') ">
+  {{response.message}}
+</div>
+
 <div class="register-block" [@fadeBottom]>
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
@@ -20,7 +24,8 @@
             <div class="form-group">
               <label for="pass">Rol:</label>
               <select name="role" id="role" class="form-control" name="role" required #role="ngModel" [(ngModel)]="user.role">
-                <option value="role">ROLE_USER</option>
+                <option value="ROLE_USER" selected="selected">Usuario</option>
+                <option value="ROLE_ADMIN">Administrador</option>
               </select>
             </div>
           </div>
